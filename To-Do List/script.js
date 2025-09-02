@@ -2,6 +2,7 @@
 const addButton = document.getElementById("addButton");
 let textArea = document.getElementById("textArea");
 let list = document.getElementById("list");
+list.innerHTML = "Add some items to start!";
 let listItems = [];
 
 // Add function
@@ -31,3 +32,8 @@ function add() {
         }
         list.innerHTML = html;
     }
+
+    function wipe(){
+        listItems = [];
+        list.innerHTML = "Add some items!"
+    };
